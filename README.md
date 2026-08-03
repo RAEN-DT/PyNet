@@ -1,32 +1,33 @@
 <p align="center">
-  <img src="https://github.com/rafa2403nunez-droid/PyNet/blob/main/Assets/PyNetLogo.png" width="400"/>
+  <img src="https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNet/main/Assets/PyNetLogo.png" width="400"/>
 </p>
 
 #
 
-**PyNET Platform** is an AI-driven BIM automation platform that connects natural language, Python execution, and Autodesk Navisworks into a unified workflow.
+**PyNET Platform** is an AI-driven BIM automation platform that connects natural language, Python execution, and Autodesk **Navisworks, Revit and Civil 3D** into a unified workflow.
 
 ### 📥 Request the Beta Testing 30 days **Trial** here: 
 Contact: **info@raendt.com** to request beta access.
 
 ### 📥 Review the latest Release here:
-**[Available Release](https://github.com/rafa2403nunez-droid/PyNet/releases)**
+**[Available Release](https://github.com/Rafael-NunezDeArenas/PyNet/releases)**
 
 ### PyNET Platform Ecosystem
 
 PyNET platform use the following Ecosistem to automate BIM tasks using AI.
 
 <p align="center">
-  <img src="https://github.com/rafa2403nunez-droid/PyNet/blob/main/Assets/PyNetPlatformStructure.png" width="1000"/>
+  <img src="https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNet/main/Assets/PyNetPlatformStructure.png" width="1000"/>
   <br>
   
 </p>
 
 | Component | Repository | Purpose |
 | :--- | :--- | :--- |
-| **PyNet Platform** | [PyNet](https://github.com/rafa2403nunez-droid/PyNet) | Navisworks/Revit/Civil 3D plugin that hosts the Python.NET engine providing UI Layer and AI integration with BIM Models |
-| **PyNet Bridge (MCP)** | [PyNetBridge](https://github.com/rafa2403nunez-droid/PyNetBridge) | MCP server that connects AI models to PyNET with including secure scripts validation |
-| **PyNet Library** | [PyNetLibrary](https://github.com/rafa2403nunez-droid/PyNetLibrary) | Python Scripts reference library for Revit, Navisworks and Civil 3D and AI context|
+| **PyNet Platform** | [PyNet](https://github.com/Rafael-NunezDeArenas/PyNet) | Navisworks/Revit/Civil 3D plugin that hosts the Python.NET engine providing UI Layer and AI integration with BIM Models |
+| **PyNet Bridge (MCP)** | [PyNetBridge](https://github.com/Rafael-NunezDeArenas/PyNetBridge) | MCP server that connects AI models to PyNET with including secure scripts validation |
+| **PyNet Library** | [PyNetLibrary](https://github.com/Rafael-NunezDeArenas/PyNetLibrary) | Python Scripts reference library for Revit, Navisworks and Civil 3D and AI context|
+| **PyNet for VS Code** | [PyNetVSCode](https://github.com/Rafael-NunezDeArenas/PyNetVSCode) | VS Code extension: embedded BIM viewer + one-click install of the MCP bridge across every AI client |
 
 ---
 
@@ -68,12 +69,12 @@ PyNET platform use the following Ecosistem to automate BIM tasks using AI.
 ## 📥 Installation & Licensing
 
 ### 1️⃣ Beta Availability
-PyNET Platform will be distributed via the Fremius platform to ensure secure licensing and controlled access.
+PyNET Platform will be distributed via the Freemius platform to ensure secure licensing and controlled access.
 
 
 | License | Description |
 | :--- | :--- |
-| **Beta Trial** | 30 trial access to a basic license. | 
+| **Beta Trial** | 30-day trial access to a basic license. | 
 | **Basic** | Access to a basic license for the extension to integrate the Autodesk products available individually. | 
 | **Pro** | Access to a Pro license for the extension to integrate the Autodesk products available at the same time. |
 | **Enterprise** | integrate PyNET in your company with an implantation project service. |
@@ -94,23 +95,34 @@ Upon first launch in Navisworks (under the **RAEN Tools** tab):
 
 ## 🤖 AI Integration via MCP (Model Context Protocol)
 
-PyNET Platform connects to AI models through **[PyNet Bridge](https://github.com/rafa2403nunez-droid/PyNetBridge)**, an MCP server that exposes PyNET tools to compatible AI clients.
+PyNET Platform connects to AI models through **[PyNet Bridge](https://github.com/Rafael-NunezDeArenas/PyNetBridge)**, an MCP server that exposes PyNET tools to compatible AI clients.
 
 This allows AI systems to generate and execute scripts that interact directly with Navisworks, Revit, and Civil 3D.
 
 ### ⚡ One-line install
 
-> ⚠️ **Prerequisites:** Python must be installed on your system (3.10 to 3.13). **Python 3.14 is not yet supported** — the `pythonnet` runtime currently supports Python 3.7 through 3.13. For VS Code extensions (Claude Code, Cline, Roo Code), **Git** must also be installed → [git-scm.com](https://git-scm.com/downloads). For detailed instructions and requirements, see the [PyNet Bridge repository](https://github.com/rafa2403nunez-droid/PyNetBridge).
+> ⚠️ **Prerequisites:** Python must be installed on your system (3.10 to 3.13). **Python 3.14 is not yet supported** — the `pythonnet` runtime currently supports Python 3.7 through 3.13. For VS Code extensions (Claude Code, Cline, Roo Code), **Git** must also be installed → [git-scm.com](https://git-scm.com/downloads). For detailed instructions and requirements, see the [PyNet Bridge repository](https://github.com/Rafael-NunezDeArenas/PyNetBridge).
 
-Open PowerShell and run:
+The simplest route is the **[VS Code extension](https://github.com/Rafael-NunezDeArenas/PyNetVSCode)**,
+which installs and configures everything on first launch — and gives you the BIM viewer too.
+
+To install the bridge on its own, from PyPI:
 
 ```powershell
-irm https://raw.githubusercontent.com/rafa2403nunez-droid/PyNetBridge/main/install.ps1 | iex
+pip install pynet-mcp-bridge
 ```
 
-This installs the MCP server and auto-detects all supported AI clients:
+Or, using PowerShell, the scripted installer that also writes the config for every client:
+
+```powershell
+irm https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNetBridge/main/install.ps1 | iex
+```
+
+Either way, the MCP server is auto-detected and configured for all supported AI clients:
 - **Claude Desktop** (standard and Microsoft Store)
 - **Claude Code** (VS Code extension / CLI)
+- **GitHub Copilot** (VS Code)
+- **Codex**
 - **Cline** (VS Code extension)
 - **Roo Code** (VS Code extension)
 
@@ -118,10 +130,30 @@ This installs the MCP server and auto-detects all supported AI clients:
 | :--- | :--- | :--- |
 | **PyNET and Codex Integration** | How to configure PyNet bridge with Codex and query into Navisworks. | [🎬 Watch here](https://youtu.be/HdmbCO_pTN0)  |
 
-> For manual setup or other clients, see the [PyNet Bridge repository](https://github.com/rafa2403nunez-droid/PyNetBridge).
+> For manual setup or other clients, see the [PyNet Bridge repository](https://github.com/Rafael-NunezDeArenas/PyNetBridge).
 
 **Important Note on AI Providers:**
 PyNET Platform acts as the integration bridge between AI models and Autodesk tools. **Access to AI models (such as Claude AI, OpenAI, etc.) is not included with the tool.** Users must provide their own integration or use the platform to bridge their existing AI workflows into the Autodesk ecosystem. PyNET Platform is the engine that enables these AIs to "understand" and "operate" Navisworks, Revit, and Civil 3D.
+
+---
+
+## 🧊 BIM Viewer in VS Code
+
+The **[PyNet Platform extension for VS Code](https://github.com/Rafael-NunezDeArenas/PyNetVSCode)**
+embeds a 3D BIM viewer directly in the editor and installs the MCP bridge for you.
+
+Export a `.pnt` package from Navisworks and open it in VS Code to navigate the federated model —
+spatial tree, element properties, sections, measurements and clash results — while your AI
+assistant drives the same scene: selecting elements, isolating a discipline, or highlighting the
+two sides of a clash as it explains them.
+
+* **The viewer is free.** No licence needed to open and explore a package.
+* **Nothing leaves your machine** — the viewer server binds to localhost.
+* Installing the extension also installs and configures the MCP bridge, so a single install
+  covers both.
+
+> 📦 Coming to the Visual Studio Code Marketplace. Until then, grab the latest `.vsix` from the
+> [extension repository](https://github.com/Rafael-NunezDeArenas/PyNetVSCode).
 
 ---
 
@@ -138,7 +170,7 @@ PyNET Platform acts as the integration bridge between AI models and Autodesk too
 
 Have questions about installation, configuration, or usage? Check the full FAQ page:
 
-👉 [PyNet FAQs](https://github.com/rafa2403nunez-droid/PyNet/wiki/PyNET-FAQs)
+👉 [PyNet FAQs](https://github.com/Rafael-NunezDeArenas/PyNet/wiki/PyNET-FAQs)
 
 ---
 
@@ -152,5 +184,5 @@ PyNET Platform is intended for professional use in BIM automation. Users are res
 Obra inscrita en el Registro de la Propiedad Intelectual de la Comunidad de Madrid.
 
 <p align="center">
-  <img src="https://github.com/rafa2403nunez-droid/PyNet/blob/main/Assets/RAENDigitalTools.png" alt="RAEN Digital Tools" width="200">
+  <img src="https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNet/main/Assets/RAENDigitalTools.png" alt="RAEN Digital Tools" width="200">
 </p>
