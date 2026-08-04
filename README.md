@@ -1,5 +1,21 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNet/main/Assets/PyNetLogo.png" width="400"/>
+  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNet/main/Assets/PyNetLogo.png" width="400"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/RAEN-DT/PyNet/releases"><img src="https://img.shields.io/github/v/release/RAEN-DT/PyNet?label=release&color=f78166" alt="Release"/></a>
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue" alt="Python"/>
+  <img src="https://img.shields.io/badge/platform-Windows-lightgrey" alt="Windows"/>
+  <img src="https://img.shields.io/badge/hosts-Navisworks%20%C2%B7%20Revit%20%C2%B7%20Civil%203D-orange" alt="Hosts"/>
+  <img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP"/>
+</p>
+
+<p align="center">
+  <a href="https://github.com/RAEN-DT">Organization</a> &middot;
+  <a href="https://github.com/RAEN-DT/PyNetBridge">Bridge</a> &middot;
+  <a href="https://github.com/RAEN-DT/PyNetLibrary">Library</a> &middot;
+  <a href="https://github.com/RAEN-DT/PyNetVSCode">VS Code</a> &middot;
+  <a href="https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs">FAQs</a>
 </p>
 
 #
@@ -10,24 +26,24 @@
 Contact: **info@raendt.com** to request access.
 
 ### 📥 Review the latest Release here:
-**[Available Release](https://github.com/Rafael-NunezDeArenas/PyNet/releases)**
+**[Available Release](https://github.com/RAEN-DT/PyNet/releases)**
 
 ### PyNET Platform Ecosystem
 
 PyNET platform use the following Ecosistem to automate BIM tasks using AI.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNet/main/Assets/PyNetPlatformStructure.png" width="1000"/>
+  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNet/main/Assets/PyNetPlatformStructure.png" width="1000"/>
   <br>
   
 </p>
 
 | Component | Repository | Purpose |
 | :--- | :--- | :--- |
-| **PyNet Platform** | [PyNet](https://github.com/Rafael-NunezDeArenas/PyNet) | Navisworks/Revit/Civil 3D plugin that hosts the Python.NET engine providing UI Layer and AI integration with BIM Models |
-| **PyNet Bridge (MCP)** | [PyNetBridge](https://github.com/Rafael-NunezDeArenas/PyNetBridge) | MCP server that connects AI models to PyNET with including secure scripts validation |
-| **PyNet Library** | [PyNetLibrary](https://github.com/Rafael-NunezDeArenas/PyNetLibrary) | Python Scripts reference library for Revit, Navisworks and Civil 3D and AI context|
-| **PyNet for VS Code** | [PyNetVSCode](https://github.com/Rafael-NunezDeArenas/PyNetVSCode) | VS Code extension: embedded BIM viewer + one-click install of the MCP bridge across every AI client |
+| **PyNet Platform** | [PyNet](https://github.com/RAEN-DT/PyNet) | Navisworks/Revit/Civil 3D plugin that hosts the Python.NET engine providing UI Layer and AI integration with BIM Models |
+| **PyNet Bridge (MCP)** | [PyNetBridge](https://github.com/RAEN-DT/PyNetBridge) | MCP server that connects AI models to PyNET with including secure scripts validation |
+| **PyNet Library** | [PyNetLibrary](https://github.com/RAEN-DT/PyNetLibrary) | Python Scripts reference library for Revit, Navisworks and Civil 3D and AI context|
+| **PyNet for VS Code** | [PyNetVSCode](https://github.com/RAEN-DT/PyNetVSCode) | VS Code extension: embedded BIM viewer + one-click install of the MCP bridge across every AI client |
 
 ---
 
@@ -95,15 +111,15 @@ Upon first launch in Navisworks (under the **RAEN Tools** tab):
 
 ## 🤖 AI Integration via MCP (Model Context Protocol)
 
-PyNET Platform connects to AI models through **[PyNet Bridge](https://github.com/Rafael-NunezDeArenas/PyNetBridge)**, an MCP server that exposes PyNET tools to compatible AI clients.
+PyNET Platform connects to AI models through **[PyNet Bridge](https://github.com/RAEN-DT/PyNetBridge)**, an MCP server that exposes PyNET tools to compatible AI clients.
 
 This allows AI systems to generate and execute scripts that interact directly with Navisworks, Revit, and Civil 3D.
 
 ### ⚡ One-line install
 
-> ⚠️ **Prerequisites:** Python must be installed on your system (3.10 to 3.13). **Python 3.14 is not yet supported** — the `pythonnet` runtime currently supports Python 3.7 through 3.13. For VS Code extensions (Claude Code, Cline, Roo Code), **Git** must also be installed → [git-scm.com](https://git-scm.com/downloads). For detailed instructions and requirements, see the [PyNet Bridge repository](https://github.com/Rafael-NunezDeArenas/PyNetBridge).
+> ⚠️ **Prerequisites:** Python 3.10 or higher must be installed on your system (3.14 is supported). For VS Code extensions (Claude Code, Cline, Roo Code), **Git** must also be installed → [git-scm.com](https://git-scm.com/downloads). For detailed instructions and requirements, see the [PyNet Bridge repository](https://github.com/RAEN-DT/PyNetBridge).
 
-The simplest route is the **[VS Code extension](https://github.com/Rafael-NunezDeArenas/PyNetVSCode)**,
+The simplest route is the **[VS Code extension](https://github.com/RAEN-DT/PyNetVSCode)**,
 which installs and configures everything on first launch — and gives you the BIM viewer too.
 
 To install the bridge on its own, from PyPI:
@@ -115,7 +131,7 @@ pip install pynet-mcp-bridge
 Or, using PowerShell, the scripted installer that also writes the config for every client:
 
 ```powershell
-irm https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNetBridge/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/RAEN-DT/PyNetBridge/main/install.ps1 | iex
 ```
 
 Either way, the MCP server is auto-detected and configured for all supported AI clients:
@@ -130,7 +146,7 @@ Either way, the MCP server is auto-detected and configured for all supported AI 
 | :--- | :--- | :--- |
 | **PyNET and Codex Integration** | How to configure PyNet bridge with Codex and query into Navisworks. | [🎬 Watch here](https://youtu.be/HdmbCO_pTN0)  |
 
-> For manual setup or other clients, see the [PyNet Bridge repository](https://github.com/Rafael-NunezDeArenas/PyNetBridge).
+> For manual setup or other clients, see the [PyNet Bridge repository](https://github.com/RAEN-DT/PyNetBridge).
 
 **Important Note on AI Providers:**
 PyNET Platform acts as the integration bridge between AI models and Autodesk tools. **Access to AI models (such as Claude AI, OpenAI, etc.) is not included with the tool.** Users must provide their own integration or use the platform to bridge their existing AI workflows into the Autodesk ecosystem. PyNET Platform is the engine that enables these AIs to "understand" and "operate" Navisworks, Revit, and Civil 3D.
@@ -139,7 +155,7 @@ PyNET Platform acts as the integration bridge between AI models and Autodesk too
 
 ## 🧊 BIM Viewer in VS Code
 
-The **[PyNet Platform extension for VS Code](https://github.com/Rafael-NunezDeArenas/PyNetVSCode)**
+The **[PyNet Platform extension for VS Code](https://github.com/RAEN-DT/PyNetVSCode)**
 embeds a 3D BIM viewer directly in the editor and installs the MCP bridge for you.
 
 Export a `.pnt` package from Navisworks and open it in VS Code to navigate the federated model —
@@ -153,7 +169,7 @@ two sides of a clash as it explains them.
   covers both.
 
 > 📦 Coming to the Visual Studio Code Marketplace. Until then, grab the latest `.vsix` from the
-> [extension repository](https://github.com/Rafael-NunezDeArenas/PyNetVSCode).
+> [extension repository](https://github.com/RAEN-DT/PyNetVSCode).
 
 ---
 
@@ -170,7 +186,7 @@ two sides of a clash as it explains them.
 
 Have questions about installation, configuration, or usage? Check the full FAQ page:
 
-👉 [PyNet FAQs](https://github.com/Rafael-NunezDeArenas/PyNet/wiki/PyNET-FAQs)
+👉 [PyNet FAQs](https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs)
 
 ---
 
@@ -180,9 +196,8 @@ PyNET Platform is intended for professional use in BIM automation. Users are res
 
 ---
 
-© 2026 RAEN Digital Tools. Todos los derechos reservados.
-Obra inscrita en el Registro de la Propiedad Intelectual de la Comunidad de Madrid.
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Rafael-NunezDeArenas/PyNet/main/Assets/RAENDigitalTools.png" alt="RAEN Digital Tools" width="200">
+  <img src="https://raw.githubusercontent.com/RAEN-DT/PyNet/main/Assets/RAENDigitalTools.png" alt="RAEN Digital Tools" width="180"><br/><br/>
+  <sub>© 2026 RAEN Digital Tools · Todos los derechos reservados.<br/>
+  Obra inscrita en el Registro de la Propiedad Intelectual de la Comunidad de Madrid.</sub>
 </p>
