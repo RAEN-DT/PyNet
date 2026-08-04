@@ -10,14 +10,6 @@
   <img src="https://img.shields.io/badge/MCP-compatible-8A2BE2" alt="MCP"/>
 </p>
 
-<p align="center">
-  <a href="https://github.com/RAEN-DT">Organization</a> &middot;
-  <a href="https://github.com/RAEN-DT/PyNetBridge">Bridge</a> &middot;
-  <a href="https://github.com/RAEN-DT/PyNetLibrary">Library</a> &middot;
-  <a href="https://github.com/RAEN-DT/PyNetVSCode">VS Code</a> &middot;
-  <a href="https://github.com/RAEN-DT/PyNet/wiki/PyNET-FAQs">FAQs</a>
-</p>
-
 #
 
 **PyNET Platform** is an AI-driven BIM automation platform that connects natural language, Python execution, and Autodesk **Navisworks, Revit and Civil 3D** into a unified workflow.
