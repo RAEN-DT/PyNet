@@ -76,13 +76,13 @@ PyNET platform use the following Ecosistem to automate BIM tasks using AI.
 
 ## 📥 Installation & Licensing
 
-### 1️⃣ Beta Availability
-PyNET Platform will be distributed via the Freemius platform to ensure secure licensing and controlled access.
+### 1️⃣ Availability
+PyNET Platform is distributed via the Freemius platform to ensure secure licensing and controlled access.
 
 
 | License | Description |
 | :--- | :--- |
-| **Beta Trial** | 30-day trial access to a basic license. | 
+| **Trial** | 30-day trial access to a basic license. | 
 | **Basic** | Access to a basic license for the extension to integrate the Autodesk products available individually. | 
 | **Pro** | Access to a Pro license for the extension to integrate the Autodesk products available at the same time. |
 | **Enterprise** | integrate PyNET in your company with an implantation project service. |
