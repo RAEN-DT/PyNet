@@ -160,9 +160,10 @@ two sides of a clash as it explains them.
 * Installing the extension also installs and configures the MCP bridge, so a single install
   covers both.
 
-> 📦 **Available on the Visual Studio Code Marketplace** — search for *PyNET Viewer* in the
-> Extensions panel, or [install it from here](https://marketplace.visualstudio.com/items?itemName=RAENDT.pynet-viewer).
-> Source and issues live in the [extension repository](https://github.com/RAEN-DT/PyNetVSCode).
+> 📦 **Published on the Visual Studio Code Marketplace.** To install it, open the **Extensions**
+> panel in VS Code and search for *PyNET Viewer*. You can also check the
+> [Marketplace listing](https://marketplace.visualstudio.com/items?itemName=RAENDT.pynet-viewer),
+> or the [extension repository](https://github.com/RAEN-DT/PyNetVSCode) for source and issues.
 
 ---
 
