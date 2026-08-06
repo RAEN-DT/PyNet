@@ -147,7 +147,7 @@ PyNET Platform acts as the integration bridge between AI models and Autodesk too
 
 ## 🧊 BIM Viewer in VS Code
 
-The **[PyNet Platform extension for VS Code](https://github.com/RAEN-DT/PyNetVSCode)**
+The **[PyNET Viewer extension for VS Code](https://marketplace.visualstudio.com/items?itemName=RAENDT.pynet-viewer)**
 embeds a 3D BIM viewer directly in the editor and installs the MCP bridge for you.
 
 Export a `.pnt` package from Navisworks and open it in VS Code to navigate the federated model —
@@ -160,8 +160,9 @@ two sides of a clash as it explains them.
 * Installing the extension also installs and configures the MCP bridge, so a single install
   covers both.
 
-> 📦 Coming to the Visual Studio Code Marketplace. Until then, grab the latest `.vsix` from the
-> [extension repository](https://github.com/RAEN-DT/PyNetVSCode).
+> 📦 **Available on the Visual Studio Code Marketplace** — search for *PyNET Viewer* in the
+> Extensions panel, or [install it from here](https://marketplace.visualstudio.com/items?itemName=RAENDT.pynet-viewer).
+> Source and issues live in the [extension repository](https://github.com/RAEN-DT/PyNetVSCode).
 
 ---
 
