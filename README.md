@@ -46,7 +46,9 @@ PyNET platform use the following Ecosistem to automate BIM tasks using AI.
 
 **PyNET Platform** introduces a closed-loop AI-assisted execution system, turning your BIM tool into an intelligent, conversational co-pilot. Unlike static plugins, PyNET Platform learns and adapts to the specific needs of your BIM model.
 
-[🎬 Watch here AI Navisworks Coordination Workflow](https://www.youtube.com/watch?v=Sfq9iXJFacU)  
+**See the loop in action:**
+* [🎬 Generative design of retail warehouses in Revit](https://www.youtube.com/watch?v=rQJNZyFTdOI)
+* [🎬 Modelling complex geometry from images in Rhino](https://youtu.be/a0k7SgHCZ9Y)
 
 ### 🔄 How it works:
 * **Intent:** The user requests an action in natural language (e.g., *"Find all clashes in Level 1 and export them to Excel"*).
@@ -98,12 +100,6 @@ Upon first launch in your host application (under the **RAEN Tools** tab, or the
 * Set your local Python installation path.
 * Define the folder where your Python scripts are stored.
 
-| Tutorial | Description | Video |
-| :--- | :--- | :--- |
-| **Configuration for navisworks Manage** | How to configure PyNet platform Addin in Navisworks Manage. | [🎬 Watch here](https://www.youtube.com/watch?v=3eR5GAOkEug)  |
-| **Browse for navisworks Manage** | How to browse scripts PyNet platform Addin in Navisworks Manage. | [🎬 Watch here](https://www.youtube.com/watch?v=rHwAKqU6Vck)  |
-| **Manage PyNet for navisworks Manage** | How to manage output messages and user interface costumization| [🎬 Watch here](https://www.youtube.com/watch?v=furMbMkhiCU)  |
-
 ---
 
 ## 🤖 AI Integration via MCP (Model Context Protocol)
@@ -138,10 +134,6 @@ Either way, the MCP server is auto-detected and configured for all supported AI 
 - **Codex**
 - **Cline** (VS Code extension)
 - **Roo Code** (VS Code extension)
-
-| Tutorial | Description | Video |
-| :--- | :--- | :--- |
-| **PyNET and Codex Integration** | How to configure PyNet bridge with Codex and query into Navisworks. | [🎬 Watch here](https://youtu.be/HdmbCO_pTN0)  |
 
 > For manual setup or other clients, see the [PyNet Bridge repository](https://github.com/RAEN-DT/PyNetBridge).
 
