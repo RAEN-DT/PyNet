@@ -14,6 +14,9 @@
 
 **PyNET Platform** is an AI-driven BIM automation platform that connects natural language, Python execution, and six desktop BIM tools — Autodesk **Navisworks**, **Revit** and **Civil 3D**, plus **Rhino**, **Tekla Structures** and **RIB Presto** — into a unified workflow.
 
+### 🎬 Watch the overview here:
+**[PyNET Platform — general presentation](https://www.youtube.com/watch?v=Tg6wKj8ULn0)** (shown on the Autodesk hosts)
+
 ### 📥 Request the 30 days **Trial** here: 
 Contact: **info@raendt.com** to request access.
 
